@@ -1,15 +1,12 @@
-## 1457. Pseudo-Palindromic Paths in a Binary Tree
+## 508. Most Frequent Subtree Sum
 
 ### Description
 
-Given a binary tree where node values are digits from 1 to 9. A path in the binary tree is said to be **pseudo-palindromic** if at least one permutation of the node values in the path is a palindrome.
+Given the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie, return all the values with the highest frequency in any order.
 
-*Return the number of pseudo-palindromic paths going from the root node to leaf nodes.*
+**Note :**
+You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
 
-**Constraints:**
-- The given binary tree will have between 1 and 10^5 nodes.
-- Node values are digits from 1 to 9.
-
-For examples and illustrations visit: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
+For examples and illustrations visit: https://leetcode.com/problems/most-frequent-subtree-sum/
 
 ### Solution
