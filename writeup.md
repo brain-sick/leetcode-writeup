@@ -32,6 +32,9 @@ We run a postorder traversal on the tree, as the postorder traversal runs on the
 
 After the postorder traversal, we iterate over all the values in the hashmap and get the maximum freqency in the hashmap in variable `fmax`. On second iteration we insert all the subtree sum values from the `freq` map into a `result` vector.
 
+![Imgur](https://i.imgur.com/EryWDvg.png)
+
+In the above example, the frequency of subtree sum `4` was maximum that is 2 times and subtree with subtree sum 4 are subtrees of nodes with values `4 and 3`.
 ```cpp
 class Solution {
 public:
@@ -67,5 +70,5 @@ public:
 **Complexity Analysis**
 
 - Time complexity: `O(n)`, because we perform `O(1)` operations on `n` nodes.
-- Space complexity: `O(n)`, because we can have in worst case, there can be `n` different subtree sums, thus `freq` will be size `n`.
+- Space complexity: `O(n)`, because in worst case, there can be `n` different subtree sums, thus `freq` hashmap will be size of `n`.
 Here `n` is the number of nodes in the binary tree.
